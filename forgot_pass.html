@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgot_pass.css">
+    <link rel="icon" href="pictures/Logoa-removebg-preview.png" type="image/png">
+    <title>Forgot password - ProActive Labs</title>
+</head>
+<body>
+    <div class="forgot-password-container">
+        <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+        </svg>
+
+        <h2 class="title">Forgot your password?</h2>
+        <p class="subtitle">Enter your email to restore access</p>
+
+        <form id="forgotPasswordForm">
+            <input 
+                type="email" 
+                id="emailInput" 
+                class="email-input" 
+                placeholder="Enter your email" 
+                required
+            >
+            <button type="submit" class="submit-btn" id="submitBtn">
+                Restore password
+            </button>
+        </form>
+
+        <div id="successMessage" class="status-message success-message">
+            Recovery instructions have been sent on email.
+        </div>
+        <div id="errorMessage" class="status-message error-message">
+            Please, enter correct email
+        </div>
+    </div>
+    <script src="forgot_pass.js"></script>
+</body>
+</html>

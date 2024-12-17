@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="icon" href="pictures/Logoa-removebg-preview.png" type="image/png">
+    <title>Login - ProActive Labs</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="bg-bubble bg-bubble-1"></div>
+        <div class="bg-bubble bg-bubble-2"></div>
+
+        <div class="logo">
+            <div class="logo-icon">PAL</div>
+            <h1>ProActive Labs</h1>
+        </div>
+
+        <div class="form-header">
+            <h1>Login</h1>
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <div class="forgot-password">
+                <a href="forgot_pass.html">Forgot your password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-buttons">
+                <a href="#" class="social-btn">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+                </a>
+                <a href="#" class="social-btn">
+                    <img src="https://www.svgrepo.com/show/448224/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-btn">
+                    <img src="https://www.svgrepo.com/show/452092/apple.svg" alt="Apple">
+                </a>
+            </div>
+        </div>
+
+        <div class="signup-link">
+            Have no account? <a href="register.html">Registration</a>
+        </div>
+    </div>
+    <script src="login_script.js"></script>
+</body>
+</html>
